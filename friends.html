@@ -9,13 +9,13 @@
     }
 
     window.fbAsyncInit = function() {
-        FB.init({ appId: '1935726109997820', 
-            status: true, 
-            cookie: true,
-            xfbml: true,
-            oauth: true
+        FB.init({
+        appId      : '1935726109997820',
+        cookie     : true,  // enable cookies to allow the server to access 
+                            // the session
+        xfbml      : true,  // parse social plugins on this page
+        version    : 'v2.8' // use graph api version 2.8
         });
-
         function updateButton(response) {
             var button = document.getElementById('fb-auth');
 
