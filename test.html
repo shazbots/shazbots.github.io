@@ -57,8 +57,9 @@
       FB.getLoginStatus(function(response) {
         statusChangeCallback(response);
       });
-      
-    FB.api(
+  };
+  
+      FB.api(
     "/me",
     function (response) {
       if (response && !response.error) {
@@ -67,7 +68,6 @@
       }
     }
     );
-  };
 
   // Load the SDK asynchronously
   (function(d, s, id) {
