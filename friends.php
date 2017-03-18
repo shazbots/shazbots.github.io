@@ -1,6 +1,6 @@
 <?php
-  $sApplicationId = 'YOUR_APPLICATION_ID';
-  $sApplicationSecret = 'YOUR_APPLICATION_SECRET';
+  $sApplicationId = '1935726109997820';
+  $sApplicationSecret = 'a859b66d41a3e4fa19ba30352ecf315a';
   $iLimit = 99;
 ?>
 <!DOCTYPE html>
