@@ -24,6 +24,12 @@
      }(document, 'script', 'facebook-jssdk'));
   </script>
   
+  FB.getLoginStatus(function(response) {
+    if (response.status === 'connected') {
+      console.log(response.authResponse.accessToken);
+    }
+  });
+  
   
   <div
     class="fb-like"
