@@ -20,6 +20,7 @@
           console.log('Logged in.');
           FB.api('/me', function(response) {
               console.log(JSON.stringify(response));
+              document.getElementById("demo2").innerHTML = JSON.stringify(response);
           });
         }
         else {
@@ -48,7 +49,7 @@
   </div>
   
   <p id="demo"></p>
-  
+  <p id="demo2"></p>
   
 
 </body>
