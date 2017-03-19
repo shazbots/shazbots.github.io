@@ -17,14 +17,14 @@
         if (response.status === 'connected') {
           console.log(response.authResponse.accessToken);
           console.log('Logged in.');
+          FB.api('/me', function(response) {
+              console.log(JSON.stringify(response));
+          });
         }
         else {
           console.log('We are not logged in');
           FB.login();
         }
-      });
-      FB.api('/me', function(response) {
-          console.log(JSON.stringify(response));
       });
     };
     
