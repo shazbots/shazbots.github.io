@@ -15,9 +15,11 @@
       FB.AppEvents.logPageView();
       FB.getLoginStatus(function(response) {
         if (response.status === 'connected') {
-          console.log(response.authResponse.accessToken);
-        } else {
-          console.log('We are not connected');
+          console.log('Logged in.');
+        }
+        else {
+          console.log('We are not logged in');
+          FB.login();
         }
       });
     };
